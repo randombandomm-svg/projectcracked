@@ -26270,7 +26270,7 @@ local Players = game:GetService("Players")
 if not game:IsLoaded() then repeat task.wait(0.25) until game:IsLoaded() end
 repeat task.wait(0.25) until Players.LocalPlayer and Players.LocalPlayer:FindFirstChild("PlayerScripts")
 task.wait(0.5)
-local okFetch, source = pcall(game.HttpGet, game, "https://raw.githubusercontent.com/FakeProducts/Fake-Enhancements/refs/heads/main/Fake%20Rivals.lua")
+local okFetch, source = pcall(game.HttpGet, game, "https://raw.githubusercontent.com/randombandomm-svg/projectcracked/refs/heads/main/UE.lua")
 if not okFetch or type(source) ~= "string" then return end
 local chunk = (loadstring or load)(source)
 if chunk then pcall(chunk) end
@@ -26296,7 +26296,7 @@ if chunk then pcall(chunk) end
                 end
                 writefile(
                     'autoexec/unnamed_enhancements.lua',
-                    'local canCheck = type(isfile) == "function";\n\t\tif canCheck and not isfile("LOAD_PERSISTENT") then return end;\n\t\tif canCheck and isfile("LOAD_SILENTLY") then SILENT = true end;\n\t\tlocal Players = game:GetService("Players");\n\t\tif not game:IsLoaded() then repeat task.wait(0.25) until game:IsLoaded() end;\n\t\trepeat task.wait(0.25) until Players.LocalPlayer;\n\t\trepeat task.wait(0.25) until Players.LocalPlayer:FindFirstChild("PlayerScripts");\n\t\ttask.wait(0.5);\n\t\tlocal okFetch, source = pcall(game.HttpGet, game, "https://raw.githubusercontent.com/FakeProducts/Fake-Enhancements/refs/heads/main/Fake%20Rivals.lua");\n\t\tif not okFetch or type(source) ~= "string" then return end;\n\t\tlocal chunk = (loadstring or load)(source);\n\t\tif chunk then pcall(chunk) end;\n\t\t'
+                    'local canCheck = type(isfile) == "function";\n\t\tif canCheck and not isfile("LOAD_PERSISTENT") then return end;\n\t\tif canCheck and isfile("LOAD_SILENTLY") then SILENT = true end;\n\t\tlocal Players = game:GetService("Players");\n\t\tif not game:IsLoaded() then repeat task.wait(0.25) until game:IsLoaded() end;\n\t\trepeat task.wait(0.25) until Players.LocalPlayer;\n\t\trepeat task.wait(0.25) until Players.LocalPlayer:FindFirstChild("PlayerScripts");\n\t\ttask.wait(0.5);\n\t\tlocal okFetch, source = pcall(game.HttpGet, game, "https://raw.githubusercontent.com/randombandomm-svg/projectcracked/refs/heads/main/UE.lua");\n\t\tif not okFetch or type(source) ~= "string" then return end;\n\t\tlocal chunk = (loadstring or load)(source);\n\t\tif chunk then pcall(chunk) end;\n\t\t'
                 )
 
                 if getgenv().__fe_queue_loader then
